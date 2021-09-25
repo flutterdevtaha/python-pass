@@ -11,4 +11,11 @@ Instructions:
 
 class StringOperations:
     def reverse(self, *, to_be_reversed: str = None):
-        raise NotImplemented('This method need to be implemented')
+        return to_be_reversed[::-1]
+
+
+class ReversedString(StringOperations):
+    StringOperations.reverse
+
+h1 = ReversedString()
+print(h1.reverse(to_be_reversed='My name is Taha'))
